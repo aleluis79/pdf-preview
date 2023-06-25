@@ -1,0 +1,6 @@
+<div>HOLA MUNDO!!!</div>
+<button (click)="visualizarPDF()">Visualizar</button>
+<div style="height: 800px; width: 800px;">
+  <ng2-pdfjs-viewer [print]="false" [download]="false" [openFile]="false" [viewBookmark]="false" #pdfViewer></ng2-pdfjs-viewer>
+</div>
+<router-outlet></router-outlet>
