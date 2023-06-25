@@ -14,6 +14,12 @@ export class PdfViewerComponent implements AfterViewInit {
   @Input({ required: true })
   url!: string;
 
+  @Input()
+  width: number = 800;
+
+  @Input()
+  height: number = 800;
+
   @ViewChild('pdfViewer') pdfViewer!: ElementRef;
 
   private http = inject(HttpClient);

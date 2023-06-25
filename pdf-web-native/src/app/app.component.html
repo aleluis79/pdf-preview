@@ -1,6 +1,6 @@
-<div style="height: 1000px;">
-  <app-pdf-viewer url="http://localhost:5042/pdf" />
-  <app-pdf-viewer url="http://localhost:5042/pdf2" />
+<div style="height: 1000px; display: flex;">
+  <app-pdf-viewer [url]="pdf1" [height]="600" [width]="600"  />
+  <app-pdf-viewer [url]="pdf2" />
 </div>
 
 <router-outlet></router-outlet>
